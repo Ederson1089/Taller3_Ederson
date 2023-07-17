@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX_OBJETOS</title>
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 class="text-center"> 
+        LISTADO DE PRODUCTOS TECNOLOGICOS
+    </h1>
+    <hr>
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-6 mb-2"> 
+                CODIGO DEL PEDIDO : <input type="text" class="form-control" name="pedido" id="pedido" 
+                placeholder="ESCRIBA EL NUMERO DE PEDIDO ">
+            </div>
+
+            <div class="col-6 mb-2"> 
+                CANTIDAD: <input type="text" class="form-control" name="cantidad" id="cantidad" 
+                placeholder="ESCRIBA LA CANTIDAD">
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <div class="col-6 mb-2">     
+                NOMBRE DEL PRODUCTO: <input type="text" class="form-control" name="nombre" id="nombre" 
+                    placeholder="ESCRIBA EL NOMBRE DEL PRODUCTO">
+            </div>
+            
+
+            <div class="col-6 mb-4"> 
+                VALOR DEL PRODUCTO: <input type="text" class="form-control" name="valor" id="valor" 
+                placeholder="ESCRIBA EL VALOR DEL PRODUCTO">
+            </div>
+
+            <div class="col text-center mb-1">
+                <button type="button" class="btn btn-info" onclick="addItem()"> AGREGAR </button>
+            </div>
+        </div>
+
+        <div style="width: 90%; text-align: center; margin: 3%;">
+            <h2 class="text-center mb-3"> 
+                LISTA DE PRODUCTOS
+            </h2>
+            <hr>
+            <div class="row" id="items"> 
+                NO HAY PRODUCTOS
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/ObjetoTaller.js">  </script>
+    
+</body>
+</html>
